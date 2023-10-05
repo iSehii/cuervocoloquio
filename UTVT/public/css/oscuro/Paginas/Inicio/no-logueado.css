@@ -1,0 +1,205 @@
+.contenedor h1 {
+    text-align: center;
+    background-color: rgb(0, 0, 161);
+    font-size: 50px;
+    padding: 5%;
+    margin: 0;
+    color: white;
+    letter-spacing: -3px;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    text-align: center;
+}
+.textStart {
+    text-align: center;
+    align-content: center;
+    display: table;
+    margin: 0 auto;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.introduccion {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+}
+
+.introduccion2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.introduccion3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.introduccion4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.carrerasSect p {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.carr1 {
+    font-size: 25px;
+}
+
+.SectionDSM {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    left: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10%;
+    align-content: center;
+}
+
+.centered {
+    width: 100%;
+    background-color: rgb(0, 0, 46);
+    display: flex;
+    justify-content: center;
+}
+
+.SectionDSM button {
+    color: white;
+    background-color: transparent;
+    border: none;
+
+}
+
+.SectionDSM .redDSM {
+    color: white;
+    width: 20%;
+
+    cursor: pointer;
+    word-wrap: break-word;
+    padding: 4%;
+    transition: 0.3s;
+    background-color: rgb(0, 24, 147);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.SectionDSM .redDSM:hover,
+button {
+    word-wrap: break-word;
+    font-weight: bolder;
+    transition: 0.3s;
+    padding: 4.5%;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(160, 176, 255);
+    border-radius: 10px;
+}
+
+.SectionDSM .redDSM button {
+
+    cursor: pointer;
+    word-wrap: break-word;
+    color: white;
+    font-size: 100%;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-weight: bold;
+}
+
+.SectionDSM .DSMimagen {
+
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.SectionDSM img {
+    border-radius: 5px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.InicioRegistro {
+    margin: 0 auto;
+}
+
+.InicioRegistro button {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: -3px;
+    background-color: rgb(0, 18, 106);
+    color: white;
+    border-radius: 5px;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-size: 60px;
+    padding: 20px 30px;
+    border: solid 1px blue;
+    transition: 0.3s;
+}
+
+.InicioRegistro button:hover {
+    border: solid 1px blue;
+    transition: 0.3s;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 5px -2px black;
+    color: rgb(0, 0, 145);
+}
+
+@media (max-width: 798px) {
+    .centro h1 {
+        padding-top: 40px;
+        font-size: 40px;
+    }
+
+    .introduccion {
+        font-size: 20px;
+    }
+
+    .SectionDSM {
+        height: 480px;
+    }
+
+    .SectionDSM .DSMimagen {
+        width: 420px;
+    }
+
+    .SectionDSM .redDSM {
+        width: 150px;
+    }
+
+    .introduccion2 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .introduccion3 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .introduccion4 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .carr1 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .InicioRegistro button {
+        font-size: 35px;
+    }
+}

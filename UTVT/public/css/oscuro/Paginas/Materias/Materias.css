@@ -1,0 +1,101 @@
+.contentCat h1 {
+    letter-spacing: -2px;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-size: 300%;
+    margin: 0%;
+    color: rgb(49, 39, 155);
+}
+
+.contentCat h3 {
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Questrial', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin: 0%;
+}
+.centro {
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 50px;
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+    #Sugerencia {
+        background-color: rgb(201, 230, 255);
+        width: 56.3%;
+        padding: 5px 10px;
+        position: absolute;
+        margin-left: 10.2%;
+        visibility: hidden;
+        text-align: left;
+        margin-top: -25px;
+    }
+
+    .content li:hover {
+        background-color: white;
+        padding-left: 20px;
+        margin-left: -43px;
+    }
+
+    .content label {
+        border-radius: 3px 3px 0px 0px;
+        width: 100%;
+        margin-left: -10px;
+        background-color: azure;
+        padding-bottom: 3px;
+        padding-left: 4px;
+        position: absolute;
+        margin-top: -5px;
+    }
+
+    .content li {
+        list-style: none;
+        padding: 5px 2px;
+        margin-left: -25px;
+    }
+
+    .content ul {
+        padding-top: 1.5px;
+        text-decoration: none;
+        padding-bottom: 0px;
+        margin-bottom: -0px;
+    }
+
+    #ssearchInput {
+        width: 70%;
+        margin-bottom: 25px;
+        padding: 10px 20px;
+    }
+
+    table {
+        margin: 0 auto;
+        padding: 10px 20px;
+        width: 90%;
+    }
+
+    table th {
+        background-color: gray;
+        color: white;
+        border: 1px solid black;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+
+    table td {
+        padding: 10px 13px;
+        background-color: aliceblue;
+    }
+
+    .ResultadoBB,
+    .Materias {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
