@@ -8,4 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 class materia_grupo extends Model
 {
     use HasFactory;
+    protected $table = 'materia_grupo';
+
+    protected $fillable = [
+        'id_materia',
+        'id_grupo',
+        'Activo',
+        'Fecha_inicio',
+        'Fecha_termino',
+    ];
+
+    public function materia()
+    {
+        return $this->belongsTo(Materia::class, 'id_materia');
+    }
+
+    public function grupo()
+    {
+        return $this->belongsTo(Grupo::class, 'id_grupo');
+    }
 }

@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class periodo extends Model
 {
     use HasFactory;
+    protected $table = 'periodo';
+
+    protected $fillable = [
+        'Comienzo',
+        'Fin',
+        'Tipo',
+    ];
 }
