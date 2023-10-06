@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\rol;
 
 class usuario extends Model
 {
@@ -29,6 +30,6 @@ class usuario extends Model
 
     public function rol()
     {
-        return $this->belongsTo(Rol::class, 'id_rol');
+        return $this->belongsTo(rol::class, 'id');
     }
 }

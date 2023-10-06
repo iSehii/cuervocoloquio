@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\publicaciones;
 use Illuminate\Http\Request;
 
 class CarrerasController extends Controller
@@ -9,6 +9,7 @@ class CarrerasController extends Controller
     public function Carreras($carrera)
     {   $sesion_iniciada;
         $datos = [];
+        $PublicacionesVacias = false;
         $vista = '';
         $Titulo = $carrera;
         $Carreras = true;
@@ -18,18 +19,22 @@ class CarrerasController extends Controller
                 case 'dsm':
                     $TituloCarrera = "Desarrollo de Software Multiplataforma";
                     $Clave = "DSM";
+                    $Id_Carrera = 1;
                     break;
                 case 'ird':
                     $TituloCarrera = "Infraestructura de Redes Digitales";
                     $Clave = "IRD";
+                    $Id_Carrera = 2;
                     break;
                 case 'igdsm':
-                    $TituloCarrera = "Ingenieria en Desarrollo y Gestión de Sotware";
+                    $TituloCarrera = "Ingeniería en Desarrollo y Gestión de Software";
                     $Clave = "IGDGS";
+                    $Id_Carrera = 3;
                     break;
                 case 'igird':
-                    $TituloCarrera = "Ingenieria en Ciberseguridad y Redes Inteligentes";
+                    $TituloCarrera = "Ingeniería en Ciberseguridad y Redes Inteligentes";
                     $Clave = "IGCyRI";
+                    $Id_Carrera = 4;
                     break;
             }
             $vista = 'no-logueado.pages.carreras.carrera';
@@ -43,9 +48,15 @@ class CarrerasController extends Controller
         }
             if (session()->get('logueado') == true) {
                 $sesion_iniciada = true;
+                $Publicacion = publicaciones::where('id_carrera', $Id_Carrera)->orderBy('id', 'desc')->paginate(10);
             } else {
+                $Publicacion = publicaciones::where('id_carrera', $Id_Carrera)->where('Publica', 1)->paginate(10);
                 $sesion_iniciada = false;
             }
-        return view($vista, compact('Titulo', 'Carreras', 'datos', 'sesion_iniciada'));
+        
+        if (!$Publicacion) {
+        $PublicacionesVacias = true;
+                    }
+        return view($vista, compact('Titulo', 'Carreras', 'datos', 'sesion_iniciada', 'Publicacion', 'PublicacionesVacias'));
     }
 }

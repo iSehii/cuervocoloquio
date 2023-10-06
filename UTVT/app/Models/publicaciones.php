@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\usuario;
+use App\Models\carrera;
 
 class publicaciones extends Model
 {
@@ -24,11 +26,11 @@ class publicaciones extends Model
 
     public function usuario()
     {
-        return $this->belongsTo(Usuario::class, 'id_usuario');
+        return $this->belongsTo(usuario::class, 'id_usuario');
     }
 
     public function carrera()
     {
-        return $this->belongsTo(Carrera::class, 'id_carrera');
+        return $this->belongsTo(carrera::class, 'id_carrera');
     }
 }

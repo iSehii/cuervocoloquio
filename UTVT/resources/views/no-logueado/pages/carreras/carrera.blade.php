@@ -20,7 +20,7 @@
                             Recientes
                         </div>
                     </a>
-                    <a href="/?filtro=desc" class="a">
+                    <a href="" class="a">
                         <div>
                             Menos reciente
                         </div>
@@ -148,24 +148,33 @@
             </div>
         </div>
     </div>
+    @if ($Publicacion->isEmpty())
+    <div class="PublicacionesDiv">
+        <center>
+            <img src="{{ asset('imagenes/PublicacionesVacias.png') }}" width="250px" alt="">
+            <h1>¡Vaya! Parece que aún no han creado publicaciones en {{ $datos['Clave'] }}</h1>
+        </center>
+    </div>
+    @else
+        @foreach ($Publicacion as $PublicacionesFind)
     <div class="PublicacionesDiv">
         <div class="Publicaciones">
             <div class="">
                 <label class="VistasP"><label>
-                        0 respuestas
+                         respuestas
                     </label></label>
                 <article class="NumeroPTitulo">
                     <a href="">
-                        Prueba de contenido y titulo
+                        {{ $PublicacionesFind->Titulo }}
                         </span>
                     </a>
                     <span class="NumeroP">
-                        1
+                        {{ $PublicacionesFind->id }}
                     </span>
                 </article>
                 <article class="ContenidoPublicacion">
                     <span class="ContenidoP" align="justify">
-                        Bienvenido a las pruebas de contenido en publicaciones
+                        {{ $PublicacionesFind->Contenido }}
                     </span>
                 </article>
                 <article class="UltimoP">
@@ -212,4 +221,40 @@
             </div>
         </div>
     </div>
+    @endforeach
+    <style>
+        .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.pagination nav div div span{
+    background-color: rgb(243, 196, 196);
+}
+
+.pagination > li {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    padding: 5px 10px;
+    background-color: #d50000; /* Cambia el color de fondo a tu preferencia */
+    color: #333; /* Cambia el color del texto a tu preferencia */
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination > .active > span {
+    background-color: #ffffff; /* Cambia el color de fondo para la página activa */
+    color: #fff; /* Cambia el color del texto para la página activa */
+}
+    </style>
+    <div class="pagination">
+        {{ $Publicacion->links() }}    
+         
+    </div>
+    @endif
 @endsection

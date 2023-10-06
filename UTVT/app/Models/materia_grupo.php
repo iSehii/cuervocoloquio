@@ -20,11 +20,11 @@ class materia_grupo extends Model
 
     public function materia()
     {
-        return $this->belongsTo(Materia::class, 'id_materia');
+        return $this->belongsTo(materia::class, 'id_materia');
     }
 
     public function grupo()
     {
-        return $this->belongsTo(Grupo::class, 'id_grupo');
+        return $this->belongsTo(grupo::class, 'id_grupo');
     }
 }

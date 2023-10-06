@@ -20,11 +20,11 @@ class grupo extends Model
 
     public function periodo()
     {
-        return $this->belongsTo(Periodo::class, 'id_periodo');
+        return $this->belongsTo(periodo::class, 'id_periodo');
     }
 
     public function carrera()
     {
-        return $this->belongsTo(Carrera::class, 'id_carrera');
+        return $this->belongsTo(carrera::class, 'id_carrera');
     }
 }
