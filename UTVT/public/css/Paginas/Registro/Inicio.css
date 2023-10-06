@@ -1,0 +1,1458 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+
+.imgAluCEL {
+    display: none;
+}
+
+.imgDocCEL {
+    display: none;
+}
+
+.AlumnoCEL {
+    display: none;
+}
+
+.DocenteCEL {
+    display: none;
+}
+
+
+.titleRol h1 {
+    font-size: 60px;
+    padding: 0% 5%;
+    margin-left: 0;
+    width: 90%;
+    color: white;
+    letter-spacing: -3.0px;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    text-align: center;
+}
+
+
+
+/*YA NO ES GLOBAL*/
+.contenedorCat {
+    transition: 0.3s;
+    box-shadow: 0px 0px 30px -7.5px rgb(49, 0, 197);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    line-height: 7.5px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    height: 295px;
+    font-weight: 900;
+    background-color: rgb(0, 14, 170);
+}
+
+.contenedorCat h2 {
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contenedorCat h1 {
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+}
+
+.titleRol {
+    transition: 0.3s;
+    padding: 30px 10px 20px 10px;
+    font-size: 25px;
+    background-color: rgb(0, 14, 170);
+    width: 90%;
+    color: rgb(255, 255, 255);
+    border-radius: 20px 20px 0px 0px;
+    margin: 0 auto;
+}
+
+.Seleccion {
+    gap: 20px;
+    transition: 0.3s;
+    background-color: rgb(0, 14, 170);
+    width: 90%;
+    padding: 0px 10px 100px 10px;
+    border-radius: 0px 0px 20px 20px;
+    position: sticky;
+    margin: 0 auto;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.SeleccionCentro {
+    transition: 0.3s;
+    display: flex;
+}
+
+.Docente:hover img,
+.imgDoc {
+    width: 350px;
+    transition: 0.5s;
+    margin-left: -30px;
+    margin-top: -10px;
+
+}
+
+.Docente:hover {
+    height: 340px;
+    background-color: rgb(74, 165, 244);
+    transition: 0.5s;
+    padding-top: 17px;
+    margin-left: 100px;
+    padding-bottom: 0px;
+    width: 300px;
+}
+
+.Docente:hover h1,
+.imgDoc h1 {
+    padding-right: 0px;
+    transition: 0.5s;
+    font-size: 0px;
+}
+
+.Docente:hover+.Alumno {
+    margin-top: 57.5px;
+}
+
+
+.imgDoc {
+    transition: 0.3s;
+    width: 250px;
+}
+
+.Docente {
+    user-select: none;
+    cursor: pointer;
+    height: 240px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px -7.5px black;
+    margin: 20px;
+    padding: 20px 35px;
+    align-self: center;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: rgb(214, 243, 255);
+    display: flex;
+}
+
+.Docente h1 {
+    padding-right: 35px;
+    transition: 0.6s;
+    color: rgb(22, 0, 93);
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Docente img {
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.Docente .textDoc {
+    position: absolute;
+    align-items: center;
+}
+
+.Alumno h1 {
+    transition: 0.5s;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 200px;
+}
+
+.Alumno {
+    cursor: pointer;
+    transition: 0.5s;
+    height: 240px;
+    box-shadow: 0px 0px 20px -7.5px black;
+    margin: 20px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(197, 255, 208);
+}
+
+.Alumno img {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.Alumno:hover img,
+.imgAlu {
+    width: 350px;
+    transition: 0.5s;
+    margin-left: -35px;
+    margin-top: -10px;
+
+}
+
+.Alumno:hover {
+    height: 340px;
+    background-color: rgb(0, 197, 30);
+    transition: 0.5s;
+    padding-top: 17px;
+    margin-right: 100px;
+    padding-bottom: 0px;
+    width: 300px;
+}
+
+.Alumno:hover h1,
+.imgAlu h1 {
+    padding-right: 0px;
+    transition: 0.5s;
+    font-size: 0px;
+}
+
+.imgAlu {
+    transition: 0.3s;
+    width: 250px;
+}
+
+@media (max-width: 1240px) {
+    .titleRol {
+        transition: 0.3s;
+        padding: 30px 10px 20px 10px;
+        font-size: 25px;
+        background-color: rgb(0, 14, 170);
+        width: 92%;
+        color: rgb(255, 255, 255);
+        border-radius: 20px 20px 0px 0px;
+        margin: 0 auto;
+    }
+
+    .Seleccion {
+        gap: 0px;
+        transition: 0.3s;
+        background-color: rgb(0, 14, 170);
+        width: 92%;
+        padding: 0px 10px 100px 10px;
+        border-radius: 0px 0px 20px 20px;
+        position: sticky;
+        margin: 0 auto;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SeleccionCentro {
+        display: flex;
+    }
+
+    .Docente:hover img,
+    .imgDoc {
+        width: 350px;
+        transition: 0.5s;
+        margin-left: -30px;
+        margin-top: -10px;
+
+    }
+
+    .Docente:hover {
+        height: 340px;
+        background-color: rgb(74, 165, 244);
+        transition: 0.5s;
+        padding-top: 17px;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        width: 300px;
+    }
+
+    .Docente:hover h1,
+    .imgDoc h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .Docente:hover+.Alumno {
+        margin-top: 57.5px;
+    }
+
+
+    .imgDoc {
+        transition: 0.3s;
+        width: 250px;
+    }
+
+    .Docente {
+        user-select: none;
+        cursor: pointer;
+        height: calc(240px - calc(100%- 240px));
+        transition: 0.3s;
+        box-shadow: 0px 0px 20px -7.5px black;
+        margin: 10px;
+        padding: 10px 25px;
+        align-self: center;
+        border-radius: 20px;
+        justify-content: center;
+        background-color: rgb(214, 243, 255);
+        display: flex;
+    }
+
+    .Docente h1 {
+        padding-right: 35px;
+        transition: 0.6s;
+        color: rgb(22, 0, 93);
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Docente img {
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Docente .textDoc {
+        position: absolute;
+        align-items: center;
+    }
+
+    .Alumno h1 {
+        transition: 0.5s;
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+    }
+
+    .Alumno {
+
+        cursor: pointer;
+        transition: 0.5s;
+        height: 240px;
+        box-shadow: 0px 0px 20px -7.5px black;
+        margin: 10px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(197, 255, 208);
+    }
+
+    .Alumno img {
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .Alumno:hover img,
+    .imgAlu {
+        width: 350px;
+        transition: 0.5s;
+        margin-left: -35px;
+        margin-top: -10px;
+
+    }
+
+    .Alumno:hover {
+
+        height: 340px;
+        background-color: rgb(0, 197, 30);
+        transition: 0.5s;
+        padding-top: 17px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+        width: 300px;
+    }
+
+    .Alumno:hover h1,
+    .imgAlu h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .imgAlu {
+        transition: 0.3s;
+        width: 250px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .titleRol {
+        transition: 0.3s;
+        padding: 30px 10px 20px 10px;
+        font-size: 25px;
+        background-color: rgb(0, 14, 170);
+        width: 95%;
+        color: rgb(255, 255, 255);
+        border-radius: 20px 20px 0px 0px;
+        margin: 0 auto;
+    }
+
+    .contenedorCat {
+        width: 70%;
+    }
+
+    .Seleccion {
+        gap: 0px;
+        transition: 0.3s;
+        background-color: rgb(0, 14, 170);
+        width: 95%;
+        padding: 0px 10px 100px 10px;
+        border-radius: 0px 0px 20px 20px;
+        position: sticky;
+        margin: 0 auto;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SeleccionCentro {
+        display: flex;
+    }
+
+    .Docente:hover img,
+    .imgDoc {
+        width: 350px;
+        transition: 0.5s;
+        margin-left: -30px;
+        margin-top: -10px;
+
+    }
+
+    .Docente:hover {
+        height: 340px;
+        background-color: rgb(74, 165, 244);
+        transition: 0.5s;
+        padding-top: 17px;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        width: 300px;
+    }
+
+    .Docente:hover h1,
+    .imgDoc h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .Docente:hover+.Alumno {
+        margin-top: 57.5px;
+    }
+
+
+    .imgDoc {
+        transition: 0.3s;
+        width: 250px;
+    }
+
+    .Docente {
+        user-select: none;
+        cursor: pointer;
+        height: calc(240px - calc(100%- 240px));
+        transition: 0.3s;
+        box-shadow: 0px 0px 20px -7.5px black;
+        margin: 5px;
+        padding: 5px 20px;
+        align-self: center;
+        border-radius: 20px;
+        justify-content: center;
+        background-color: rgb(214, 243, 255);
+        display: flex;
+    }
+
+    .Docente h1 {
+        padding-right: 20px;
+        transition: 0.6s;
+        color: rgb(22, 0, 93);
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Docente img {
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Docente .textDoc {
+        position: absolute;
+        align-items: center;
+    }
+
+    .Alumno h1 {
+        font-size: 30px;
+        transition: 0.5s;
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+    }
+
+    .Alumno {
+
+        cursor: pointer;
+        transition: 0.5s;
+        height: 240px;
+        box-shadow: 0px 0px 20px -7.5px black;
+        margin: 5px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(197, 255, 208);
+    }
+
+    .Alumno img {
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .Alumno:hover img,
+    .imgAlu {
+        width: 350px;
+        transition: 0.5s;
+        margin-left: -35px;
+        margin-top: -10px;
+
+    }
+
+    .Alumno:hover {
+
+        height: 340px;
+        background-color: rgb(0, 197, 30);
+        transition: 0.5s;
+        padding-top: 17px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+        width: 300px;
+    }
+
+    .Alumno:hover h1,
+    .imgAlu h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .imgAlu {
+        transition: 0.3s;
+        width: 250px;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .Docente,
+    .Alumno {
+        padding: 4px;
+    }
+
+    .Docente:hover,
+    .Alumno:hover {
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .Docente,
+    .Alumno {
+        padding: 2px;
+    }
+
+    .Docente:hover,
+    .Alumno:hover {
+        padding: 15px 25px;
+        width: 300px;
+    }
+
+    .Alumno:hover img,
+    .imgAlu {
+        width: 325px;
+        transition: 0.5s;
+        margin-left: -25px;
+        margin-top: -10px;
+
+    }
+
+    .Alumno:hover {
+
+        height: 250px;
+        background-color: rgb(0, 197, 30);
+        transition: 0.5s;
+        padding-top: 0px;
+        margin-right: 0px;
+        padding-bottom: 30px;
+        width: 300px;
+    }
+
+    .Alumno:hover h1,
+    .imgAlu h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .imgAlu {
+        transition: 0.3s;
+        width: 250px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .Docente,
+    .Alumno {
+        padding: 2px;
+    }
+
+    .Docente:hover,
+    .Alumno:hover {
+        padding: 15px 25px;
+        width: 300px;
+    }
+
+    .Alumno:hover img,
+    .imgAlu {
+        width: 325px;
+        transition: 0.5s;
+        margin-left: -25px;
+        margin-top: -10px;
+
+    }
+
+    .Alumno:hover {
+        padding-right: 5px;
+        padding-left: 5px;
+        height: 250px;
+        background-color: rgb(0, 197, 30);
+        transition: 0.5s;
+        padding-top: 0px;
+        margin-right: 0px;
+        padding-bottom: 30px;
+        width: 300px;
+    }
+
+    .Alumno:hover h1,
+    .imgAlu h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .imgAlu {
+        transition: 0.3s;
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .contenedorCat {
+        transition: 0.3s;
+        box-shadow: 0px 0px 30px -7.5px rgb(49, 0, 197);
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+        justify-content: center;
+        line-height: 7.5px;
+        color: rgb(255, 255, 255);
+        width: 80%;
+        height: 295px;
+        font-weight: 900;
+        background-color: rgb(0, 14, 170);
+    }
+
+    .contenedorCat h2 {
+        font-weight: 500;
+        transition: 0.3s;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contenedorCat h1 {
+        font-family: 'Quicksand', sans-serif;
+        transition: 0.3s;
+    }
+
+    .titleRol {
+        transition: 0.3s;
+        padding: 30px 10px 20px 10px;
+        font-size: 25px;
+        background-color: rgb(0, 14, 170);
+        width: 90%;
+        color: rgb(255, 255, 255);
+        border-radius: 20px 20px 0px 0px;
+        margin: 0 auto;
+    }
+
+    .Seleccion {
+        gap: 20px;
+        transition: 0.3s;
+        background-color: rgb(0, 14, 170);
+        width: 90%;
+        padding: 0px 10px 100px 10px;
+        border-radius: 0px 0px 20px 20px;
+        position: sticky;
+        margin: 0 auto;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SeleccionCentro {
+        gap: 30px;
+        width: 100%;
+        transition: 0.3s;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap-reverse;
+    }
+
+    .Docente:hover img,
+    .imgDoc {
+        width: 350px;
+        transition: 0.5s;
+        margin-left: -22.5px;
+        margin-top: 0px;
+
+    }
+
+    .Docente:hover {
+        height: 340px;
+        background-color: rgb(74, 165, 244);
+        transition: 0.5s;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .Docente:hover h1,
+    .imgDoc h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .Docente:hover+.Alumno {
+        margin-top: 0px;
+    }
+
+
+    .imgDoc {
+        transition: 0.3s;
+        width: 250px;
+    }
+
+    .Docente {
+        width: 70%;
+        user-select: none;
+        cursor: pointer;
+        height: 240px;
+        transition: 0.3s;
+        box-shadow: 0px 0px 20px -7.5px black;
+        margin: 0 auto;
+        padding: 20px 35px;
+        align-self: center;
+        border-radius: 20px;
+        justify-content: center;
+        background-color: rgb(214, 243, 255);
+        display: flex;
+    }
+
+    .Docente h1 {
+        padding-right: 35px;
+        transition: 0.6s;
+        color: rgb(22, 0, 93);
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Docente img {
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Docente .textDoc {
+        position: absolute;
+        align-items: center;
+    }
+
+    .Alumno h1 {
+        transition: 0.5s;
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+    }
+
+    .Alumno {
+        width: 70%;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.5s;
+        height: 240px;
+        box-shadow: 0px 0px 20px -7.5px black;
+        padding: 20px 35px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(197, 255, 208);
+    }
+
+    .Alumno img {
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .Alumno:hover img,
+    .imgAlu {
+        width: 400px;
+        transition: 0.5s;
+        margin-left: -50px;
+
+    }
+
+    .Alumno:hover {
+        height: 340px;
+        background-color: rgb(0, 197, 30);
+        transition: 0.5s;
+        padding-bottom: 15px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .Alumno:hover h1,
+    .imgAlu h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .imgAlu {
+        transition: 0.3s;
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .contenedorCat {
+        transition: 0.3s;
+        box-shadow: 0px 0px 30px -7.5px rgb(49, 0, 197);
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+        justify-content: center;
+        line-height: 7.5px;
+        color: rgb(255, 255, 255);
+        width: 80%;
+        height: 295px;
+        font-weight: 900;
+        background-color: rgb(0, 14, 170);
+    }
+
+    .contenedorCat h2 {
+        font-weight: 500;
+        transition: 0.3s;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contenedorCat h1 {
+        font-family: 'Quicksand', sans-serif;
+        transition: 0.3s;
+    }
+
+    .titleRol {
+        transition: 0.3s;
+        padding: 30px 10px 20px 10px;
+        font-size: 25px;
+        background-color: rgb(0, 14, 170);
+        width: 90%;
+        color: rgb(255, 255, 255);
+        border-radius: 20px 20px 0px 0px;
+        margin: 0 auto;
+    }
+
+    .Seleccion {
+        gap: 20px;
+        transition: 0.3s;
+        background-color: rgb(0, 14, 170);
+        width: 90%;
+        padding: 0px 10px 100px 10px;
+        border-radius: 0px 0px 20px 20px;
+        position: sticky;
+        margin: 0 auto;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SeleccionCentro {
+        gap: 30px;
+        width: 100%;
+        transition: 0.3s;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap-reverse;
+    }
+
+    .Docente:hover img,
+    .imgDoc {
+        width: 350px;
+        transition: 0.5s;
+        margin-left: -22.5px;
+        margin-top: 0px;
+
+    }
+
+    .Docente:hover {
+        height: 340px;
+        background-color: rgb(74, 165, 244);
+        transition: 0.5s;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .Docente:hover h1,
+    .imgDoc h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .Docente:hover+.Alumno {
+        margin-top: 0px;
+    }
+
+
+    .imgDoc {
+        transition: 0.3s;
+        width: 270px;
+    }
+
+    .Docente {
+        width: 70%;
+        user-select: none;
+        cursor: pointer;
+        height: 240px;
+        transition: 0.3s;
+        box-shadow: 0px 0px 20px -7.5px black;
+        margin: 0 auto;
+        padding: 20px 35px;
+        align-self: center;
+        border-radius: 20px;
+        justify-content: center;
+        background-color: rgb(214, 243, 255);
+        display: flex;
+    }
+
+    .Docente h1 {
+        padding-right: 35px;
+        transition: 0.6s;
+        color: rgb(22, 0, 93);
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Docente img {
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Docente .textDoc {
+        position: absolute;
+        align-items: center;
+    }
+
+    .Alumno h1 {
+        transition: 0.5s;
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+    }
+
+    .Alumno {
+        width: 70%;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.5s;
+        height: 240px;
+        box-shadow: 0px 0px 20px -7.5px black;
+        padding: 20px 35px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(197, 255, 208);
+    }
+
+    .Alumno img {
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .Alumno:hover img,
+    .imgAlu {
+        width: 400px;
+        transition: 0.5s;
+        margin-left: -50px;
+
+    }
+
+    .Alumno:hover {
+        height: 340px;
+        background-color: rgb(0, 197, 30);
+        transition: 0.5s;
+        padding-bottom: 15px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .Alumno:hover h1,
+    .imgAlu h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .imgAlu {
+        transition: 0.3s;
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .contenedorCat {
+        transition: 0.3s;
+        box-shadow: 0px 0px 30px -7.5px rgb(49, 0, 197);
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
+        justify-content: center;
+        line-height: 7.5px;
+        color: rgb(255, 255, 255);
+        width: 80%;
+        height: 295px;
+        font-weight: 900;
+        background-color: rgb(0, 14, 170);
+    }
+
+    .contenedorCat h2 {
+        font-weight: 500;
+        transition: 0.3s;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .contenedorCat h1 {
+        font-family: 'Quicksand', sans-serif;
+        transition: 0.3s;
+    }
+
+    .titleRol {
+        transition: 0.3s;
+        padding: 30px 10px 20px 10px;
+        font-size: 25px;
+        background-color: rgb(0, 14, 170);
+        width: 90%;
+        color: rgb(255, 255, 255);
+        border-radius: 20px 20px 0px 0px;
+        margin: 0 auto;
+    }
+
+    .Seleccion {
+        gap: 20px;
+        transition: 0.3s;
+        background-color: rgb(0, 14, 170);
+        width: 90%;
+        padding: 0px 10px 100px 10px;
+        border-radius: 0px 0px 20px 20px;
+        position: sticky;
+        margin: 0 auto;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SeleccionCentro {
+        gap: 30px;
+        width: 100%;
+        transition: 0.3s;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap-reverse;
+    }
+
+    .Docente:hover img,
+    .imgDoc {
+        width: 350px;
+        transition: 0.5s;
+        margin-left: -22.5px;
+        margin-top: 0px;
+
+    }
+
+    .Docente:hover {
+        height: 340px;
+        background-color: rgb(74, 165, 244);
+        transition: 0.5s;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .Docente:hover h1,
+    .imgDoc h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .Docente:hover+.Alumno {
+        margin-top: 0px;
+    }
+
+
+    .imgDoc {
+        transition: 0.3s;
+        width: 250px;
+    }
+
+    .Docente {
+        width: 70%;
+        user-select: none;
+        cursor: none;
+        height: 240px;
+        transition: 0.3s;
+        box-shadow: 0px 0px 20px -7.5px black;
+        margin: 0 auto;
+        padding: 20px 35px;
+        align-self: center;
+        border-radius: 20px;
+        justify-content: center;
+        background-color: rgb(214, 243, 255);
+        display: flex;
+    }
+
+    .Docente h1 {
+        padding-right: 35px;
+        transition: 0.6s;
+        color: rgb(22, 0, 93);
+        font-weight: 600;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Docente img {
+        margin-left: 20px;
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Docente .textDoc {
+        position: absolute;
+        align-items: center;
+    }
+
+    .Alumno h1 {
+        color: white;
+        padding: 0px;
+        opacity: 1;
+        margin: 0px;
+        transition: 0.5s;
+        background-color: black;
+        font-weight: 600;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .textoAlu {
+        text-align: center;
+        margin-bottom: 0px;
+        width: 75%;
+        margin-top: 20px;
+        opacity: 0.5;
+        display: none;
+        background-color: rgb(255, 255, 255);
+
+        position: absolute;
+    }
+
+    .textoDoc {
+        display: none;
+    }
+
+    .Alumno {
+        width: 70%;
+        margin: 0 auto;
+        cursor: none;
+        padding: 0px 40px 50px 40px;
+        transition: 0.5s;
+        height: 240px;
+        box-shadow: 0px 0px 20px -7.5px black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(197, 255, 208);
+    }
+
+    .Alumno img {
+        transition: 0.5s;
+        margin-top: -55px;
+        margin-left: -35px;
+        width: 120%;
+    }
+
+    .Alumno:hover img,
+    .imgAlu {
+        width: 400px;
+        transition: 0.5s;
+        margin-left: -0px;
+
+    }
+
+    .Alumno:hover {
+        height: 360px;
+        background-color: rgb(0, 197, 30);
+        transition: 0.5s;
+        padding-bottom: 15px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .imgAlu:hover {
+        margin-left: -60px;
+    }
+
+    .Alumno:hover h1,
+    .imgAlu h1 {
+        padding-right: 0px;
+        transition: 0.5s;
+        font-size: 0px;
+    }
+
+    .imgAlu {
+        transition: 0.3s;
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .SeleccionCentro .DocabsolutCEL,
+    .AluabsolutCEL {
+        color: white;
+        font-size: 30px;
+        padding: 0;
+        font-weight: bold;
+        justify-content: center;
+        font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    }
+
+    .AluabsolutCEL h5,
+    .DocabsolutCEL h5 {
+        padding-top: 10px;
+    }
+
+    .AluabsolutCEL {
+        justify-content: center;
+        height: 50px;
+        margin: 0 auto;
+        background-color: black;
+        top: 0;
+        opacity: 0.9;
+        color: white;
+        text-align: center;
+        border-radius: 0px 0px 15px 15px;
+        width: 100%;
+    }
+
+    .DocabsolutCEL {
+        background-color: black;
+        opacity: 0.9;
+        height: 50px;
+        color: white;
+        text-align: center;
+        border-radius: 0px 0px 15px 15px;
+        width: 100%;
+    }
+
+    .Alumno:hover .AluabsolutCEL {}
+
+    .titleRol h1 {
+        font-size: 40px;
+        padding: 0% 0% 0% 5%;
+        margin-left: 0;
+        width: 90%;
+        color: white;
+        letter-spacing: -3.0px;
+        font-weight: bold;
+        font-family: 'IBM Plex Sans Hebrew', sans-serif;
+        text-align: center;
+    }
+
+    .DocenteCEL {
+        padding-top: 23.5px;
+        margin: 0 auto;
+        border-radius: 15px;
+        background-color: rgb(214, 243, 255);
+        width: 95%;
+        display: inline;
+    }
+
+    .DocenteCEL img {
+        margin-left: 22px;
+        width: 97.5%;
+    }
+
+    .AlumnoCEL img {
+        margin-bottom: -50px;
+        margin-left: -20px;
+        width: 100%;
+    }
+
+    .AlumnoCEL:hover {
+        width: 100%;
+        background-color: rgb(0, 200, 37);
+    }
+
+    .AlumnoCEL:hover img {
+        width: 100%;
+    }
+
+    .DocenteCEL:hover {
+        width: 100%;
+        background-color: rgb(0, 177, 253);
+    }
+
+    .DocenteCEL:hover img {
+        width: 100%;
+    }
+
+    .AlumnoCEL {
+        padding: 0;
+        margin: 0 auto;
+        width: 95%;
+        background-color: rgb(197, 255, 208);
+        border-radius: 15px;
+        display: inline;
+    }
+
+    .imgAluCEL {
+        margin-left: 15px;
+        width: 260px;
+        display: inline;
+    }
+
+    .imgDocCEL {
+        width: 260px;
+        margin-left: -15px;
+        display: inline;
+    }
+
+    .Docente {
+        display: none;
+        padding-bottom: 0px;
+        height: 250px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .Alumno {
+        display: none;
+        height: 200px;
+        width: 100%;
+        padding: 45px 0px;
+        margin: 0 auto;
+    }
+
+    .imgAlu {
+        display: none;
+        width: 250px;
+        padding: 0;
+        margin: 20px -15px 0px 0px;
+
+    }
+
+    .imgDoc {
+        display: none;
+        width: 250px;
+        margin: 0px 30px 0px 0px;
+        width: 85%;
+        padding: 0;
+
+    }
+
+    .Docente:hover {
+        height: 300px;
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .Alumno:hover {
+        height: 300px;
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .imgAlu:hover {
+        display: none;
+        width: 250px;
+        padding: 0;
+        margin: 20px -15px 0px 0px;
+
+    }
+
+    .imgDoc:hover {
+        display: none;
+        width: 10px;
+        margin: 0px 30px 0px 0px;
+        width: 85%;
+        padding: 0;
+
+    }
+}

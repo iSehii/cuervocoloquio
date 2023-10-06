@@ -50,7 +50,7 @@ class CarrerasController extends Controller
                 $sesion_iniciada = true;
                 $Publicacion = publicaciones::where('id_carrera', $Id_Carrera)->orderBy('id', 'desc')->paginate(10);
             } else {
-                $Publicacion = publicaciones::where('id_carrera', $Id_Carrera)->where('Publica', 1)->paginate(10);
+                $Publicacion = publicaciones::where('id_carrera', $Id_Carrera)->orderBy('id', 'desc')->where('Publica', 1)->paginate(10);
                 $sesion_iniciada = false;
             }
         
