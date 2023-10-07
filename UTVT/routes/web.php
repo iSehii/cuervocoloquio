@@ -16,7 +16,7 @@ use App\Http\Controllers\CarrerasController;
 */
 
 Route::get('/cambiar-tema', [Temas::class, 'CambiarTema'])->name('cambiar-tema');
-Route::get('/correo', [RegistroController::class, 'Enviar']);
+Route::get('/correos', [RegistroController::class, 'Enviar']);
 
 
 Route::get('/', function () {
