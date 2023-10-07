@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Temas;
 use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\CarrerasController;
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,16 +58,7 @@ Route::get('registro', function () {
 
 
 
-Route::get('login', function () {
-    $Titulo = "Inicia sesión";
-    $oscuro = true;
-    $Usuarios = true;
-    if (session()->get('logueado') == true) {
-        return redirect('/');
-    } else {
-        return view('no-logueado/pages/auth/login/inicio', compact('Titulo', 'Usuarios', 'oscuro'));
-    }
-})->name('login');
+Route::get('login', [LoginController::class, 'Login'])->name('login');
 
 
 

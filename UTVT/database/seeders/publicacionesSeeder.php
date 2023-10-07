@@ -14,6 +14,6 @@ class publicacionesSeeder extends Seeder
      */
     public function run()
 {
-        Factory::factoryForModel(\App\Models\publicaciones::class)->count(10000)->create();
+        Factory::factoryForModel(\App\Models\publicaciones::class)->count(1000)->create();
     }
 }

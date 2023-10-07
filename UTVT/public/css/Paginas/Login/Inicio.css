@@ -8,7 +8,9 @@ h3 {
     font-weight: bold;
     background-color: aliceblue;
 }
-
+.Contenedor {
+    align-items: center;
+}
 .inputLogin button {
     cursor: pointer;
     box-sizing: border-box;
@@ -57,7 +59,7 @@ h3 {
 .contenedorCat {
     box-sizing: border-box;
     width: 80%;
-    margin: 0%;
+    margin: 0 auto;
     background-color: rgb(225, 231, 255);
     color: rgb(0, 0, 0);
     padding: 1%;
