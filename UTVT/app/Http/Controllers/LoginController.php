@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     public function Login() {
-    $Titulo = "Inicia sesión";
+    $Titulo = "Iniciar sesión";
     $oscuro = true;
     $Usuarios = true;
     if (session()->get('logueado') == true) {
