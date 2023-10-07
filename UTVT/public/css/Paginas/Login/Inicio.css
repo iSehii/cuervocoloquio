@@ -1,0 +1,77 @@
+h3 {
+    text-align: center;
+}
+
+.inputLogin button:hover {
+    transition: 0.3s;
+    color: blue;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.inputLogin button {
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(43, 50, 239);
+    font-weight: bold;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.inputLogin input:focus {
+    background-color: aliceblue;
+}
+
+.inputLogin input:-internal-autofill-selected {
+    background-color: white;
+}
+.inputLogin {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+.inputLogin input {
+    outline: none;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(0, 135, 219);
+    padding: 17.5px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    text-align: left;
+}
+.contenedorCat {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0%;
+    background-color: rgb(225, 231, 255);
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 8%;
+    border-radius: 10px;
+}
+
+.contenedorCat h1 {
+    box-sizing: border-box;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -3px;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
