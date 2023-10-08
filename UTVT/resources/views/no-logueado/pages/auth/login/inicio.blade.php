@@ -14,11 +14,11 @@
             <input value="" type="password" name="contra" placeholder="Clave de registro"> 
             <div style="text-align: center"> <br>
                 <label id="logText"></label>
-                <input type="hidden" id="token" name="token">
                 <input type="hidden" id="action" name="action" value="index">
                 <button>Iniciar sesión</button>
             </div>
         </div>
+        {{ $Usuario[0]->Nombre }}
     </form>
 </div>
 @endsection

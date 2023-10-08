@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\usuario;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
@@ -13,7 +13,8 @@ class LoginController extends Controller
     if (session()->get('logueado') == true) {
         return redirect('/');
     } else {
-        return view('no-logueado/pages/auth/login/inicio', compact('Titulo', 'Usuarios', 'oscuro'));
+        $Usuario = usuario::where('id', 1)->get();
+        return view('no-logueado/pages/auth/login/inicio', compact('Titulo', 'Usuarios', 'oscuro', 'Usuario'));
     }
     }
 }
