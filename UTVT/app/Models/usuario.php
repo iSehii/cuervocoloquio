@@ -13,6 +13,7 @@ class usuario extends Model
     protected $table = 'usuario';
 
     protected $fillable = [
+        'Publico',
         'Correo',
         'pass',
         'Matricula',

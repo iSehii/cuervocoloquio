@@ -15,6 +15,7 @@ return new class extends Migration
     {
     Schema::create('usuario', function (Blueprint $table) {
         $table->id();
+        $table->boolean('Publico');
         $table->string('Correo');
         $table->text('pass');
         $table->string('Matricula');

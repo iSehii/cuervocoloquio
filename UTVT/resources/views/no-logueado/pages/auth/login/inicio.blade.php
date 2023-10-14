@@ -17,8 +17,9 @@
                 <input type="hidden" id="action" name="action" value="index">
                 <button>Iniciar sesión</button>
             </div>
-        </div>
+        </diva>
         {{ $Usuario[0]->Nombre }}
     </form>
+</div>
 </div>
 @endsection

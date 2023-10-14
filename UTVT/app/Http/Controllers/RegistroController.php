@@ -15,4 +15,14 @@ public function Enviar()
     
     return response()->json(['message' => 'Correo enviado correctamente']);
     }
+    
+    public function Registro() {
+    $Titulo = "Regìstrate";
+    $Usuarios = true;
+    if (session()->get('logueado') == true) {
+        return redirect('/');
+    } else {   
+        return view('no-logueado/pages/auth/register/alumno', compact('Titulo', 'Usuarios'));
+    }
+}
 }

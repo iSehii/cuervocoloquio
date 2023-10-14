@@ -14,13 +14,13 @@
                             <script>
                                 function Docente() {
                                     setTimeout(() => {
-                                        window.location.href = "/pgs/auth/register/docente/"
+                                        window.location.href = ""
                                     }, 300);
                                 }
 
                                 function Alumno() {
                                     setTimeout(() => {
-                                        window.location.href = "/pgs/auth/register/alumno/"
+                                        window.location.href = "{{ route('registroAlumno') }}"
                                     }, 300);
                                 }
                             </script>

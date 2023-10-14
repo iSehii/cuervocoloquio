@@ -46,7 +46,10 @@ Route::prefix('carreras')->group(function () {
 });
 
 
-Route::get('registro', function () {
+Route::prefix('registro')->group(function () {
+
+
+Route::get('/', function () {
     $Titulo = "Regìstrate";
     $Usuarios = true;
     if (session()->get('logueado') == true) {
@@ -56,6 +59,9 @@ Route::get('registro', function () {
     }
 })->name('registro');
 
+Route::get('alumno', [RegistroController::class , 'Registro'])->name('registroAlumno');
+
+});
 
 
 Route::get('login', [LoginController::class, 'Login'])->name('login');
