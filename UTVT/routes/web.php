@@ -109,3 +109,10 @@ Route::get('materias', function () {
         return view('no-logueado/pages/materias', compact('Titulo', 'Materias'));
     }
 })->name('materias');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
