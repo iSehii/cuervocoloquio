@@ -60,6 +60,10 @@ Route::get('/', function () {
 })->name('registro');
 
 Route::get('alumno', [RegistroController::class , 'Registro'])->name('registroAlumno');
+Route::post('/alumno/success', [RegistroController::class , 'RegistrarAlumno'])->name('registrarAlumno');
+Route::get('/alumno/success', function () {
+    return redirect()->route('registroAlumno');
+});
 
 });
 

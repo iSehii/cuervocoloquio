@@ -10,7 +10,8 @@
             <br>
             <h1>Registro</h1>
             <h3>Crea tu cuenta Cuervo, es gratis y solo te tomará un minuto.</h3>
-            <form action="/pgs/auth/register/alumno/index.php" id="Formulario" method="post">
+            <form action="{{ route('registrarAlumno') }}" id="Formulario" method="post">
+                @csrf
                 <div class="inputs" style="margin: 0 auto">
                     <div class="cajas" style="margin: 0 auto">
                         <div class="renglon">
@@ -136,7 +137,7 @@
                                     <select name="grupo{{ $loop->index + 1 }}" onchange="grupillo(this)" style="padding: 10px 5px;">
                                         <option value="" disabled selected>Selecciona tu grupo</option>
                                         @foreach ($gruposGroup as $grupo)
-                                            <option value="{{ $grupo->id_grupo }}">{{ $grupo->Clave }}</option>
+                                            <option value="{{ $grupo->id }}">{{ $grupo->Clave }}</option>
                                         @endforeach
                                     </select>
                                 </div>

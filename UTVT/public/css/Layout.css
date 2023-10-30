@@ -88,7 +88,9 @@ body {
     gap: 5px;
 }
 /* The switch - the box around the slider */
-
+.contenido {
+    border-left: solid 1px rgb(198, 198, 198);
+}
 .preferencias .contenidoIzq {
     padding-top: 25vh;
     color: rgb(0, 0, 0);
@@ -267,6 +269,8 @@ body {
 }
 /* FIN BARRA DE NAVEGACION */
 
+
+
 /* INICIO CONTENIDO IZQUIERDA */
 .menubar {
     width: 17%;
@@ -280,7 +284,7 @@ body {
 .izquierda {
     position: sticky;
     padding-top: 25vh;
-    padding-bottom: 40vh;
+    padding-bottom: 0%;
     background-color: aliceblue;
     top: 56px;
     z-index: 1;
@@ -288,7 +292,6 @@ body {
     transition: opacity 0.3s ease-in-out;
     background-color: white;
     width: 100%;
-    border-right: solid 1px rgb(198, 198, 198);
     padding-right: 0;
 }
 
@@ -363,8 +366,10 @@ body {
 
 .Contenedor {
     display: flex;
+    
 }
 .Contenido {
+    
     flex: 1;
     background-color: white;
 }
@@ -462,7 +467,11 @@ footer {
 .footer .imagSmartphone {
     display: none;
 }
-
+@media (max-width: 970px) {
+    .menubar {
+        display: none;
+    }
+}
 @media (max-width: 936px) {
     .iconsFooter {
         display: inline;

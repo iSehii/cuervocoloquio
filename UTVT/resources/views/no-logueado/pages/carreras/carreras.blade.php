@@ -1,5 +1,9 @@
 @push('estilos')
-    <link rel="stylesheet" href="{{ asset('css/Paginas/Carreras/Carreras.css') }}">
+@if(session('oscuro') !== null && session('oscuro') == true)
+        <link rel="stylesheet" href="{{ asset('css/oscuro/Paginas/Carreras/Carreras.css') }}">
+@else 
+        <link rel="stylesheet" href="{{ asset('css/Paginas/Carreras/Carreras.css') }}">
+    @endif
 @endpush
 @extends('Inicio')
 @section('Contenido')
