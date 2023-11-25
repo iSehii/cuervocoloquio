@@ -3,6 +3,7 @@
     <link href="{{ asset('css/Paginas/Login/Inicio.css') }}" rel="stylesheet">
 @endpush
 @section('Contenido')
+<br><br>
 <div class="contenedorCat">
     <h1>¡Bienvenido!</h1>
     <h3>Inicia sesión para comenzar a interactuar.</h3>
@@ -18,7 +19,6 @@
                 <button>Iniciar sesión</button>
             </div>
         </div>
-        {{ $Usuario[0]->Nombre }}
     </form>
 </div>
 @endsection

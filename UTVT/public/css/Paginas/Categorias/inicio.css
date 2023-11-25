@@ -1,0 +1,106 @@
+.Categorias {
+    text-align: center;
+}
+
+.Categorias .Busqueda {
+}
+
+.Categorias .Busqueda input {
+    margin: 10px;
+    width: 70%;
+    height: 40px;
+    z-index: 5;
+    transition: 300ms;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.Categorias .Busqueda input:hover + span {
+    color: blue;
+    transition: 300ms;
+}
+
+.Categorias .Busqueda input:hover::placeholder {
+    color: blue;
+    transition: 300ms;
+}
+
+.Categorias .Busqueda span:hover {
+    color: blue;
+    transition: 300ms;
+}
+
+.Categorias .Busqueda span {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    margin-top: 17.5px;
+    margin-left: -45px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.Categorias .Busqueda input:hover {
+    box-shadow: 0px 0px 7px rgb(4, 84, 154);
+    border: 1px solid blue;
+    transition: 300ms;
+}
+
+.Categorias .Etiquetas {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: left;
+    width: 65%;
+}
+
+.Categorias .Etiquetas .Tags {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 5px;
+    padding: 10px;
+}
+
+.Categorias .Etiquetas .Tags a {
+    text-decoration: none;
+}
+.Categorias .Etiquetas .Tags .Text label {
+    cursor: pointer;
+    text-decoration: none;
+}
+.Categorias .Etiquetas .Tags .Text {
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(191, 191, 255);
+    color: #000000;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 3px 6px;
+    border: 1px solid rgb(38, 93, 156);
+    border-radius: 2px;
+}
+
+.Categorias .Etiquetas {
+}
+
+.Categorias h1 {
+    letter-spacing: -2px;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-size: 300%;
+    color: rgb(49, 39, 155);
+}
+
+.Categorias h3 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}

@@ -8,6 +8,7 @@
     <link id="miEstilo" rel="stylesheet" href="{{ asset('/css/Layout.css') }}">
 @endif
 <script src="{{ asset('js/Layouts/preferencias.js') }}"></script>
+<script src="{{ asset('js/Layouts/global.js') }}"></script>
 <link rel="shortcut icon" href="{{ asset('/imagenes/behuse-logos/favicon.ico')}}" type="image/x-icon">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">

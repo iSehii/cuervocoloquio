@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Temas;
 use App\Http\Controllers\RegistroController;
+use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\CarrerasController;
 use App\Http\Controllers\LoginController;
 /*
@@ -19,21 +20,20 @@ use App\Http\Controllers\LoginController;
 Route::get('/cambiar-tema', [Temas::class, 'CambiarTema'])->name('cambiar-tema');
 Route::get('/correos', [RegistroController::class, 'Enviar']);
 
-
 Route::get('/', function () {
-    $Inicio = "Selected";
+    $Inicio = 'Selected';
     if (session()->get('logueado') == true) {
-        $Titulo = "Inicio";
+        $Titulo = 'Inicio';
         return view('logueado', compact('Titulo', 'Inicio'));
     } else {
-        $Titulo = "Inicia sesión o regìstrate";
+        $Titulo = 'Inicia sesión o regìstrate';
         return view('no-logueado/inicio', compact('Titulo', 'Inicio'));
     }
 })->name('inicio');
 
 Route::prefix('carreras')->group(function () {
     Route::get('/', function () {
-        $Titulo = "Carreras";
+        $Titulo = 'Carreras';
         $Carreras = true;
         if (session()->get('logueado') == true) {
             return redirect('/');
@@ -45,78 +45,60 @@ Route::prefix('carreras')->group(function () {
     Route::get('/{carrera}', [CarrerasController::class, 'Carreras'])->name('carrera');
 });
 
-
 Route::prefix('registro')->group(function () {
+    Route::get('/', function () {
+        $Titulo = 'Regìstrate';
+        $Usuarios = true;
+        if (session()->get('logueado') == true) {
+            return redirect('/');
+        } else {
+            return view('no-logueado/pages/auth/register/inicio', compact('Titulo', 'Usuarios'));
+        }
+    })->name('registro');
 
-
-Route::get('/', function () {
-    $Titulo = "Regìstrate";
-    $Usuarios = true;
-    if (session()->get('logueado') == true) {
-        return redirect('/');
-    } else {   
-        return view('no-logueado/pages/auth/register/inicio', compact('Titulo', 'Usuarios'));
-    }
-})->name('registro');
-
-Route::get('alumno', [RegistroController::class , 'Registro'])->name('registroAlumno');
-Route::post('/alumno/success', [RegistroController::class , 'RegistrarAlumno'])->name('registrarAlumno');
-Route::get('/alumno/success', function () {
-    return redirect()->route('registroAlumno');
+    Route::get('alumno', [RegistroController::class, 'Registro'])->name('registroAlumno');
+    Route::post('/alumno/success', [RegistroController::class, 'RegistrarAlumno'])->name('registrarAlumno');
+    Route::get('/alumno/success', function () {
+        return redirect()->route('registroAlumno');
+    });
 });
-
-});
-
 
 Route::get('login', [LoginController::class, 'Login'])->name('login');
 
-
-
-
-
 Route::get('usuarios', function () {
-    $Titulo = "Usuarios";
+    $Titulo = 'Usuarios';
     $Usuarios = true;
     if (session()->get('logueado') == true) {
         return redirect('/');
-    } else {   
+    } else {
         return view('no-logueado/pages/usuarios', compact('Titulo', 'Usuarios'));
     }
 })->name('usuarios');
 
 Route::get('publicaciones', function () {
-    $Titulo = "Publicaciones";
+    $Titulo = 'Publicaciones';
     $Publicaciones = true;
     if (session()->get('logueado') == true) {
         return redirect('/');
-    } else {   
+    } else {
         return view('no-logueado/pages/publicaciones', compact('Titulo', 'Publicaciones'));
     }
 })->name('publicaciones');
 
-Route::get('categorias', function () {
-    $Titulo = "Categorias";
-    $Categorias = true;
-    if (session()->get('logueado') == true) {
-        return redirect('/');
-    } else {   
-        return view('no-logueado/pages/categorias', compact('Titulo', 'Categorias'));
-    }
-})->name('categorias');
+
+Route::prefix('categorias')->group(function () {
+    Route::get('/', [CategoriasController::class, 'Filtros'])->name('categorias');
+
+});
+
+
 
 Route::get('materias', function () {
-    $Titulo = "Materias";
+    $Titulo = 'Materias';
     $Materias = true;
     if (session()->get('logueado') == true) {
         return redirect('/');
-    } else {   
+    } else {
         return view('no-logueado/pages/materias', compact('Titulo', 'Materias'));
     }
 })->name('materias');
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

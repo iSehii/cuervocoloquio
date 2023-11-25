@@ -281,10 +281,52 @@ body {
     color: black;
     text-decoration: none;
 }
+.izquierda.visible {
+    transition: transform 0.3s;
+    display: inline;
+}
+
+.invisible {
+    display: inline;
+    width: 236px;
+    overflow-y: none;
+    overflow-x: none;
+    animation: showRightToLeft 0.3s forwards;
+    transform: translateX(0%);
+    margin-top: 56px;
+    height: 500px;
+    margin-left: 0%;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+    background-color: white;
+    padding: 0%;
+    padding-left: 0;
+    border-right: solid 1px rgb(198, 198, 198);
+    position: fixed;
+    padding-right: 0;
+}
+@keyframes showRightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes showLeftToRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
 .izquierda {
     position: sticky;
     padding-top: 25vh;
-    padding-bottom: 0%;
+    padding-bottom: 40vh;
     background-color: aliceblue;
     top: 56px;
     z-index: 1;
@@ -468,8 +510,46 @@ footer {
     display: none;
 }
 @media (max-width: 970px) {
-    .menubar {
+.Contenedor {
+        display: block;
+
+    }
+
+    .Contenido {
+
+        flex: none;
+        background-color: white;
+    }
+    .inicio .logoDesktop {
+        height: 46px;
+        left: 50%;
+        top: 4px;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+    .barra .auth-links {
         display: none;
+    }
+    .barra .menu {
+        visibility: visible;
+    }
+    .izquierda {
+        width: 236px;
+        overflow-y: none;
+        overflow-x: none;
+        animation: showLeftToRight 0.3s forwards;
+        transform: translateX(-100%);
+        display: none;
+        margin-top: 56px;
+        height: 500px;
+        margin-left: 0%;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 1;
+        background-color: white;
+        padding: 0%;
+    }
+    .menubar {
+        display: inline;
     }
 }
 @media (max-width: 936px) {

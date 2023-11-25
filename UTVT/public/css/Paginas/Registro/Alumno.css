@@ -44,7 +44,7 @@ h10 {
 .contenedorCat {
     color: rgb(255, 255, 255);
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
     box-shadow: 0px 0px 2px 0px black;
     background-color: rgb(0, 43, 118);
     padding-top: 0%;
@@ -191,7 +191,22 @@ h10 {
 .colorverde:not(:focus) {
     animation: colorverde 5s forwards;
 }
-
+@media (max-width: 500px) {
+    .Div {
+        margin-top: 5px;
+    }
+    .contenedorCat {
+            width: 90%;
+        }
+        .cajas {
+            justify-content: center;
+        }
+        .cajas .renglon {
+            justify-content: center;
+            gap: 0px;
+            width: 90%;
+        }
+}
 @keyframes colorverde {
     from {
         transition: 1s;
